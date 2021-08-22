@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Ideasethu">
-        <activity android:name=".faqpage"></activity>
+        <activity android:name=".DetailsActivity" />
         <activity android:name=".MainActivity2" />
+        <activity android:name=".faqpage" />
         <activity android:name=".contactus" />
         <activity android:name=".home1" />
         <activity android:name=".investorpage" />

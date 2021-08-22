@@ -49,7 +49,7 @@ public class contactus extends AppCompatActivity {
     }
 
     public void backhome(View view) {
-        Intent i = new Intent(contactus.this, HomeActivity.class);
+        Intent i = new Intent(contactus.this, home1.class);
         startActivity(i);
     }
 }
