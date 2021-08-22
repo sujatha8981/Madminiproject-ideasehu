@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class home1 extends AppCompatActivity {
 
-    private Button btnview, btnpost;
+    private Button btncontact, btnpost , btnview1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,9 +17,11 @@ public class home1 extends AppCompatActivity {
         setContentView(R.layout.activity_home1);
 
         btnpost = findViewById(R.id.put);
-        btnview = findViewById(R.id.contact);
+        btncontact = findViewById(R.id.contact);
+        btnview1 = findViewById(R.id.button5);
         innovator();
         contact();
+        view();
     }
 
     private void innovator(){
@@ -35,7 +37,7 @@ public class home1 extends AppCompatActivity {
 
     private void contact(){
 
-        btnview.setOnClickListener(new View.OnClickListener() {
+        btncontact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(home1.this, contactus.class));
@@ -45,6 +47,17 @@ public class home1 extends AppCompatActivity {
 
 
     }
+
+    private void view(){
+
+        btnview1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(home1.this, MainActivity2.class));
+            }
+        });
+    }
+
     public void backhome(View view) {
         Intent i = new Intent(home1.this, HomeActivity.class);
         startActivity(i);

@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class contactus extends AppCompatActivity {
 
-    EditText et_subject,et_message;
+    EditText et_subject, et_message;
     Button btn;
 
     @Override
@@ -28,30 +28,28 @@ public class contactus extends AppCompatActivity {
                 String subject = et_subject.getText().toString().trim();
                 String message = et_message.getText().toString().trim();
                 String email = "sujathasuj8981@gmail.com";
-                if(subject.isEmpty())
-                {
+                if (subject.isEmpty()) {
                     Toast.makeText(contactus.this, "Please add Subject", Toast.LENGTH_SHORT).show();
-                }
-                else if(message.isEmpty())
-                {
+                } else if (message.isEmpty()) {
                     Toast.makeText(contactus.this, "Please add some Message", Toast.LENGTH_SHORT).show();
-                }
-                else
-                {
+                } else {
                     String mail = "mailto:" + email +
                             "?&subject=" + Uri.encode(subject) +
                             "&body=" + Uri.encode(message);
                     Intent intent = new Intent(Intent.ACTION_SENDTO);
                     intent.setData(Uri.parse(mail));
                     try {
-                        startActivity(Intent.createChooser(intent,"Send Email.."));
-                    }
-                    catch (Exception e)
-                    {
-                        Toast.makeText(contactus.this, "Exception: "+e.getMessage(), Toast.LENGTH_SHORT).show();
+                        startActivity(Intent.createChooser(intent, "Send Email.."));
+                    } catch (Exception e) {
+                        Toast.makeText(contactus.this, "Exception: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 }
             }
         });
+    }
+
+    public void backhome(View view) {
+        Intent i = new Intent(contactus.this, HomeActivity.class);
+        startActivity(i);
     }
 }
