@@ -48,13 +48,38 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/domain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="196dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="309dp" />
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="123dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="164dp"
+        android:text="Accept"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="126dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="164dp"
+        android:text="Reject"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

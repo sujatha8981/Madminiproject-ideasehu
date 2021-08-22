@@ -9,16 +9,26 @@ import android.widget.TextView;
 
 
 public class investorpage extends AppCompatActivity {
+    private TextView domain,text1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_investorpage);
 
+        domain = findViewById(R.id.domain);
+        text1= findViewById(R.id.textappear);
+
+        String domain1 = getIntent().getStringExtra("keydomain");
+        String idea2 = getIntent().getStringExtra("keyidea");
+
+        domain.setText(domain1);
+        text1.setText(idea2);
+
 
     }
 
     public void backhome(View view) {
-        Intent i = new Intent(investorpage.this,home1.class);
+        Intent i = new Intent(investorpage.this,HomeActivity.class);
         startActivity(i);
     }
 }

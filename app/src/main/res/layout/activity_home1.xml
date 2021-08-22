@@ -12,18 +12,18 @@
         android:layout_width="181dp"
         android:layout_height="52dp"
         android:layout_marginBottom="116dp"
-        android:text="Post Your Idea"
+        android:text="Post / View  Idea"
         app:layout_constraintBottom_toTopOf="@+id/imageButton2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/view"
+        android:id="@+id/contact"
         android:layout_width="182dp"
         android:layout_height="57dp"
         android:layout_marginTop="28dp"
-        android:text="View the Ideas"
+        android:text="CONTACT-US"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"

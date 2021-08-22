@@ -17,9 +17,9 @@ public class home1 extends AppCompatActivity {
         setContentView(R.layout.activity_home1);
 
         btnpost = findViewById(R.id.put);
-        btnview = findViewById(R.id.view);
+        btnview = findViewById(R.id.contact);
         innovator();
-        investor();
+        contact();
     }
 
     private void innovator(){
@@ -33,12 +33,12 @@ public class home1 extends AppCompatActivity {
 
     }
 
-    private void investor(){
+    private void contact(){
 
         btnview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(home1.this, investorpage.class));
+                startActivity(new Intent(home1.this, contactus.class));
                 finish();
             }
         });
