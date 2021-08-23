@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bridge"
+    android:background="@drawable/horizontal"
     tools:context=".home1">
 
     <Button
         android:id="@+id/put"
         android:layout_width="181dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="416dp"
         android:text="Post Your Idea"
         app:layout_constraintBottom_toTopOf="@+id/imageButton2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -25,7 +25,7 @@
         android:layout_marginTop="28dp"
         android:text="CONTACT-US"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/put" />
 

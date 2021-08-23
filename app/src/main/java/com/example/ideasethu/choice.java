@@ -39,7 +39,7 @@ public class choice extends AppCompatActivity {
         btninvestor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(choice.this, MainActivity2.class));
+                startActivity(new Intent(choice.this, home2.class));
                 finish();
             }
         });

@@ -10,21 +10,21 @@ import android.widget.TextView;
 
 
 public class investorpage extends AppCompatActivity {
-    private TextView domain,text1;
-    /*private Button btnaccept,btnreject;*/
+    /*private TextView domain,text1;
+    private Button btnaccept,btnreject;*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_investorpage);
 
-        domain = findViewById(R.id.domain);
+      /*  domain = findViewById(R.id.domain);
         text1 = findViewById(R.id.textappear);
 
         String domain1 = getIntent().getStringExtra("keydomain");
         String idea2 = getIntent().getStringExtra("keyidea");
 
         domain.setText(domain1);
-        text1.setText(idea2);
+        text1.setText(idea2);*/
 
 
        /* btnaccept.setOnClickListener(new View.OnClickListener() {
@@ -47,7 +47,7 @@ public class investorpage extends AppCompatActivity {
 
 
     public void backhome(View view) {
-        Intent i = new Intent(investorpage.this,HomeActivity.class);
+        Intent i = new Intent(investorpage.this,home2.class);
         startActivity(i);
     }
 }
