@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private Button btninnovator, btninvestor;
+    private Button btninnovator; /*btninvestor;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,13 +24,14 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         btninnovator = findViewById(R.id.button);
-        btninvestor = findViewById(R.id.button2);
+       /* btninvestor = findViewById(R.id.button2);*/
 
-        innovator();
-        investor();
+        open();
+        /*investor();*/
+
     }
 
-    private void innovator(){
+    private void open(){
         btninnovator.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,7 +42,7 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
-    private void investor(){
+   /* private void investor(){
 
         btninvestor.setOnClickListener(new View.OnClickListener() {
             @Override

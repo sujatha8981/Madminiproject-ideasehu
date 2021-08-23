@@ -12,7 +12,7 @@
         android:layout_width="181dp"
         android:layout_height="52dp"
         android:layout_marginBottom="116dp"
-        android:text="Post / View  Idea"
+        android:text="Post Your Idea"
         app:layout_constraintBottom_toTopOf="@+id/imageButton2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
@@ -43,24 +43,15 @@
         app:srcCompat="@drawable/home1"
         />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
     <TextView
         android:id="@+id/textView"
-        android:layout_width="255dp"
+        android:layout_width="329dp"
         android:layout_height="58dp"
         android:layout_marginTop="40dp"
         android:background="#4CB2BC"
         android:shadowColor="#9C27B0"
-        android:text="Ideas / Sugesstions"
+        android:text="Innovations"
+        android:textAlignment="center"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

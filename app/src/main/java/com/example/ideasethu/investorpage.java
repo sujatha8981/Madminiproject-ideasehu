@@ -47,7 +47,7 @@ public class investorpage extends AppCompatActivity {
 
 
     public void backhome(View view) {
-        Intent i = new Intent(investorpage.this,home1.class);
+        Intent i = new Intent(investorpage.this,HomeActivity.class);
         startActivity(i);
     }
 }

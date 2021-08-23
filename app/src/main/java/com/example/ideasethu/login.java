@@ -5,13 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class login extends AppCompatActivity {
     private EditText logusername,logpassword;
     private Button btnlogin;
+
 
     private  DBHelper myDB;
 
@@ -24,6 +27,8 @@ public class login extends AppCompatActivity {
         logpassword = findViewById(R.id.password);
 
         btnlogin = findViewById(R.id.login);
+
+
 
         myDB = new DBHelper(this);
 
@@ -38,7 +43,7 @@ public class login extends AppCompatActivity {
                 boolean var = myDB.checkUser(logusername.getText().toString() , logpassword.getText().toString());
                 if (var){
                     Toast.makeText(login.this, "login Successful", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(login.this , home1.class));
+                    startActivity(new Intent(login.this , choice.class));
                     finish();
                 }
                 else {
